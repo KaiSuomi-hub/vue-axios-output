@@ -2,9 +2,30 @@
   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
+    <div>
+    <home/>
+
+    <!-- <img alt="Vue logo" src="./assets/penis.png"> -->
+    <viewpizza/>
+    
+    </div>
+
   </div>
   <router-view/>
+  <viewpizza/>
 </template>
+
+<script>
+import viewpizza from './components/viewpizza.vue';
+import Home  from './views/Home.vue';
+export default {
+  viewpizza,
+  Home
+}
+
+
+</script>
+
 
 <style lang="scss">
 #app {
